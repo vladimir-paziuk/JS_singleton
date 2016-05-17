@@ -92,4 +92,11 @@ var APP = (function(){
 	// publish/subscribe events
 	events.on('peopleChanged', _render);
 	events.emit('peopleChanged', peoples);
+
+	// API access
+	return {
+		addPerson: addPerson,
+		removePerson: removePerson
+	}
+
 })();
